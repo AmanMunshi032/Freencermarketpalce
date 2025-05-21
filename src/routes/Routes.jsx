@@ -6,6 +6,9 @@ import Authlaout from "../layout/Authlaout";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import AddTask from "../pages/AddTask/AddTask";
+import BrowseTask from "../pages/BrowseTask/BrowseTask";
+import MyPostedTasks from "../pages/MyPostedTasks/MyPostedTasks";
+import TaskDetail from "../components/TaskDetails/TaskDetail";
 
   export const router = createBrowserRouter([
     {
@@ -21,15 +24,22 @@ import AddTask from "../pages/AddTask/AddTask";
             path:'/AddTask ',
             Component:AddTask
         },
+         {
+            path:'MyPostedTasks',
+            Component:MyPostedTasks
+        },
         {
-            path:'/Bloge',
-            element: <h1>this is Bloge bage</h1>
+            path:'/BrowseTask',
+            Component:BrowseTask,
+            loader:()=>fetch('http://localhost:3000/coffees')
 
         },
         {
-            parh:'/Hold',
-            element: <h1>this is Bloge bage</h1>
+          path:'/TaskDetail',
+          Component:TaskDetail,
+            loader:()=>fetch('http://localhost:3000/coffees')
         }
+       
       ]
     },
     {

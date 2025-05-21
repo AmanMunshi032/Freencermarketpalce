@@ -22,8 +22,8 @@ const Navber = () => {
     const links = <>
     <li><NavLink to= '/'>Home</NavLink></li>
     <li><NavLink  to= '/AddTask '>Add Task </NavLink></li>
-     <li> <NavLink to= '/Bloge'>Browse Tasks</NavLink></li> 
-     <li> <NavLink to= '/Hold'>My Posted Tasks</NavLink></li> 
+     <li> <NavLink to= '/BrowseTask'>Browse Tasks</NavLink></li> 
+     <li> <NavLink to= '/MyPostedTasks'>My Posted Tasks</NavLink></li> 
  </>
     return (
      
