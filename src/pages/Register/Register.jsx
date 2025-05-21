@@ -42,7 +42,7 @@ const Register = () => {
        })
        console.log(user)
        //fece 
-       fetch('http://localhost:3000/graps',{
+       fetch('http://localhost:3000/users',{
          method:'POST',
        headers:{
       'content-type':'application/json'

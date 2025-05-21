@@ -6,6 +6,7 @@ import { signInWithEmailAndPassword } from 'firebase/auth';
 
 const Authprovider = ({ children }) => {
 const [user,setuser]=useState(null)
+const [mode,setmode]=useState()
 // console.log(user)
 const CreactUser =(email,password)=>{
     return createUserWithEmailAndPassword(auth,email,password)
@@ -19,6 +20,16 @@ const Updateuser=(updatedata)=>{
 }
 const singout =()=>{
     return signOut(auth)
+}
+const handelDarklight =()=>{
+  if(mode == "Light"){
+    setmode("Dark")
+    document.body.style.backgroundColor="black"
+  }
+  else{
+      setmode("Light")
+    document.body.style.backgroundColor="white"
+  }
 }
 
 useEffect(()=>{
@@ -35,7 +46,8 @@ const userinfo={
     user,
     setuser,
     Updateuser,
-    singout 
+    singout ,
+    handelDarklight
 }
 
     return <Authcontext value={userinfo}>{ children }</Authcontext>

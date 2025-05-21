@@ -31,10 +31,10 @@ const handelTask =(e)=>{
     return (
           <div className='px-8 py-4'>
           <div className='p-12 text-center space-y-4'>
-                <h1 className='text-5xl font-bold'>Add Task</h1>
+                <h1 className='text-5xl font-bold text-amber-400'>Add Task</h1>
         </div>
         <form  onSubmit={handelTask}>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>              <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-full  border p-4">
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mb-3'>              <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-full  border p-4">
   <label className="label">Task Title</label>
   <input type="text"name='TaskTitle' className="input w-full" placeholder=" Title Name" />
 </fieldset>
@@ -54,7 +54,7 @@ const handelTask =(e)=>{
 </fieldset>
             </div>
    <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-full border p-4">
-  <label className="label">Budget</label>
+  <label className="label ">Budget</label>
   <input type="text" name='Budget' className="input w-full" placeholder="Enter Budget" />
 </fieldset>
 <button className='btn  w-full mt-3' >Add Button</button>

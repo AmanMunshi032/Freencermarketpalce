@@ -1,19 +1,23 @@
-import React, { use,} from 'react';
+import React, { use, useState,} from 'react';
 import { Link, NavLink } from 'react-router';
 import './Nave.css'
 import { Authcontext } from '../../Firebase/Authcontext';
-// const [show,setshow]=useState(false)
+import { CiLight } from "react-icons/ci";
+import { MdDarkMode } from "react-icons/md";
 
 const Navber = () => {
-  const {user,singout }=use(Authcontext)
+  const [show,setshow]=useState(false)
+  const {user,singout,handelDarklight}=use(Authcontext)
    const handelLOgout=()=>{
-    console.log("dfkjfdh")
      singout().then(()=>{
       alert("your logout successfuly !")
      })
       .catch(error=>{
         console.log(error)
        })
+   }
+   const handelshow =()=>{
+    setshow(!show)
    }
     const links = <>
     <li><NavLink to= '/'>Home</NavLink></li>
@@ -22,10 +26,13 @@ const Navber = () => {
      <li> <NavLink to= '/Hold'>My Posted Tasks</NavLink></li> 
  </>
     return (
+     
        <div>
   <div className="navbar bg-base-100 shadow-sm">
         <div className="navbar-start">
+          <button className='ml-4' onClick={ ()=> {handelshow(),handelDarklight()}}>{show? <CiLight size={28} />:<MdDarkMode size={28} />}</button>
           <div className="dropdown">
+            
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
             </div>
