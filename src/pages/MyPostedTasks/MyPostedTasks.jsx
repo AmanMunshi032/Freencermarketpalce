@@ -1,42 +1,56 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+// import { useLoaderData } from 'react-router';
+import Table from '../../components/Table/Table';
 
 const MyPostedTasks = () => {
+const [shuduldata,setshuduldata]=useState([])
+useEffect(()=>{
+    fetch('http://localhost:3000/coffees')
+    .then(res=>res.json())
+    .then(data=>{
+       setshuduldata(data)
+    })
+},[ ])
+    // const shuduls = useLoaderData()
+    const handeldelete =(id)=>{
+      fetch(`http://localhost:3000/coffees/${id}`,{
+        method:"DELETE",
+        headers:{
+          'content-type':'application/json'
+        }
+      })
+      .then(res=>res.json())
+      .then(data=>{
+        console.log(data)
+         if(data.deletedCount > 0){
+        const remainingdata =shuduldata.filter((shudul)=> shudul._id !==id)
+        setshuduldata(remainingdata)
+       }
+      })
+    }
     return (
-        <div>
+        <div className=' m-2'>
            <div className="overflow-x-auto">
   <table className="table">
     {/* head */}
     <thead>
       <tr>
         <th></th>
-        <th>Name</th>
-        <th>Job</th>
-        <th>Favorite Color</th>
-        <th>Favorite Color</th>
+        <th>Task Title</th>
+        <th>Category</th>
+        <th>Deadline</th>
+        <th>Form Edit</th>
       </tr>
     </thead>
     <tbody>
-      {/* row 1 */}
-      <tr>
-        <th>1</th>
-        <td>Cy Ganderton</td>
-        <td>Quality Control Specialist</td>
-        <td>Blue</td>
-      </tr>
-      {/* row 2 */}
-      <tr>
-        <th>2</th>
-        <td>Hart Hagerty</td>
-        <td>Desktop Support Technician</td>
-        <td>Purple</td>
-      </tr>
-      {/* row 3 */}
-      <tr>
-        <th>3</th>
-        <td>Brice Swyre</td>
-        <td>Tax Accountant</td>
-        <td>Red</td>
-      </tr>
+        {
+            shuduldata.map((shudul , index)=><Table key={shudul._id}
+            index={index}
+             handeldelete={ handeldelete}
+             shudul={shudul}
+             ></Table> )
+        }
+      
     </tbody>
   </table>
 </div>

@@ -26,7 +26,8 @@ import TaskDetail from "../components/TaskDetails/TaskDetail";
         },
          {
             path:'MyPostedTasks',
-            Component:MyPostedTasks
+            Component:MyPostedTasks,
+           
         },
         {
             path:'/BrowseTask',
