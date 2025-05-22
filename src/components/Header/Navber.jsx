@@ -20,15 +20,16 @@ const Navber = () => {
     setshow(!show)
    }
     const links = <>
-    <li><NavLink to= '/'>Home</NavLink></li>
-    <li><NavLink  to= '/AddTask '>Add Task </NavLink></li>
-     <li> <NavLink to= '/BrowseTask'>Browse Tasks</NavLink></li> 
-     <li> <NavLink to= '/MyPostedTasks'>My Posted Tasks</NavLink></li> 
+
+    <li className='text-purple-600'><NavLink to= '/' >Home</NavLink></li>
+    <li className='text-purple-600'><NavLink  to= '/AddTask '>Add Task </NavLink></li>
+     <li className='text-purple-600' > <NavLink to= '/BrowseTask'>Browse Tasks</NavLink></li> 
+     <li className='text-purple-600'> <NavLink to= '/MyPostedTasks'>My Posted Tasks</NavLink></li> 
  </>
     return (
      
        <div>
-  <div className="navbar bg-base-100 shadow-sm">
+  <div className="navbar  shadow-sm">
         <div className="navbar-start">
           <button className='ml-4' onClick={ ()=> {handelshow(),handelDarklight()}}>{show? <CiLight size={28} />:<MdDarkMode size={28} />}</button>
           <div className="dropdown">
@@ -42,7 +43,7 @@ const Navber = () => {
              {links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl"></a>
+          {/* <a className="btn btn-ghost text-xl"></a> */}
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 space-x-3">

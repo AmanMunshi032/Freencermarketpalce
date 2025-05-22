@@ -6,9 +6,9 @@ const TaskDetail = () => {
     console.log(ditels)
     return (
         <div>
-         
+         <h1>hello ditels page</h1>
         </div>
-    );
+    ); 
 };
 
 export default TaskDetail;

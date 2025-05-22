@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { use } from 'react';
 import Swal from 'sweetalert2';
+import { Authcontext } from '../../Firebase/Authcontext';
 
 const AddTask = () => {
+  const{user}=use(Authcontext)
 const handelTask =(e)=>{
      e.preventDefault()
       const form =e.target
@@ -45,17 +47,26 @@ const handelTask =(e)=>{
  
 </fieldset>
 <fieldset className="fieldset bg-base-200 border-base-300 rounded-box   w-full border p-4">
-  <label className="label">Description</label>
-  <input type="text" name='Description' className="input w-full" placeholder="Enter your Description" />
+  <label className="label">Deadline </label>
+  <input type="date" name='Deadline' className="input w-full" placeholder="Enter your Description" />
 </fieldset>
 <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  w-full border p-4">
-  <label className="label">Deadline</label>
-  <input type="date" name='Deadline' className="input w-full" placeholder="Enter Deadline" />
+  <label className="label"> Budget</label>
+  <input type="text" name='Budget' className="input w-full" placeholder="Enter Deadline" />
+</fieldset>
+<fieldset className="fieldset bg-base-200 border-base-300 rounded-box  w-full border p-4">
+  <label className="label">Email</label>
+   <p type="email" name='email' className=' input w-full text-xl'>{user&& user.email}</p>
+</fieldset>
+<fieldset className="fieldset bg-base-200 border-base-300 rounded-box  w-full border p-4">
+  <label className="label">UserName</label>
+    <p type="text" name='name' className=' input w-full text-xl'>{user && user.displayName}</p>
 </fieldset>
             </div>
    <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-full border p-4">
-  <label className="label ">Budget</label>
-  <input type="text" name='Budget' className="input w-full" placeholder="Enter Budget" />
+  <label className="label ">Description</label>
+ <textarea type="text" name='Description' >
+ </textarea>
 </fieldset>
 <button className='btn  w-full mt-3' >Add Button</button>
         </form>
