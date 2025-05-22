@@ -9,6 +9,7 @@ import AddTask from "../pages/AddTask/AddTask";
 import BrowseTask from "../pages/BrowseTask/BrowseTask";
 import MyPostedTasks from "../pages/MyPostedTasks/MyPostedTasks";
 import TaskDetail from "../components/TaskDetails/TaskDetail";
+import UpdateData from "../components/UpdateData/UpdateData";
 
   export const router = createBrowserRouter([
     {
@@ -39,7 +40,13 @@ import TaskDetail from "../components/TaskDetails/TaskDetail";
           path:'/TaskDetail',
           Component:TaskDetail,
             loader:()=>fetch('http://localhost:3000/coffees')
+        },
+        {
+          path:'/UpdateData/:id',
+          Component:UpdateData,
+             loader:({params})=>fetch(`http://localhost:3000/coffees/${params.id}`)
         }
+
        
       ]
     },
