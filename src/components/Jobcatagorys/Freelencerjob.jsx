@@ -1,37 +1,29 @@
-import React, { useEffect, useState } from 'react';
 
-const Freelencerjob = () => {
- const [users, setUsers] = useState([]); 
-
-  useEffect(() => {
-    
-    fetch('/jobcatagory.json')
-      .then(res => res.json())
-      .then(data => {
-        setUsers(data); 
-      })
-      .catch(error => {
-        console.error( error);
-      });
-  }, []); 
+const Freelencerjob = ({user}) => {
+ const {job_title,category,image , rating ,salary,description } = user
     return (
       
             <div>
-                {users((user)=> <div className="card bg-base-100 w-96 shadow-sm">
+            <div className="card bg-base-100  shadow-sm">
   <figure className="px-10 pt-10">
     <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+      src={image}
       alt="Shoes"
       className="rounded-xl" />
   </figure>
-  <div className="card-body items-center text-center">
-    <h2 className="card-title">{user}</h2>
-    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+  <div className="card-body  ">
+   <div className="flex  justify-between">
+     <h4 className="card-title">{job_title}</h4>
+    <h4 className="card-title text-amber-400">{rating}</h4>
+    
+   </div>
+   <p>{category}</p>
+    <p>{description}</p>
     <div className="card-actions">
-      <button className="btn btn-primary">Buy Now</button>
+     <p className="text-pink-600 font-semibold">{salary}</p>
     </div>
   </div>
-</div>)}
+</div>
             </div>
     );
 };

@@ -1,10 +1,10 @@
-{
-  "freelancer_popular_jobs": [
+
+   [
     {
       "category": "Web Development",
       "job_title": "Frontend Developer",
       "description": "Designing and building websites, web apps, and e-commerce platforms.",
-      "image": "https://example.com/images/frontend-developer.jpg",
+      "image": "https://img.freepik.com/free-photo/person-front-computer-working-html_23-2150040428.jpg?uid=R185479330&ga=GA1.1.1814945148.1727862069&semt=ais_hybrid&w=740",
       "rating": 4.8,
       "salary": "$25 - $100/hr"
     },
@@ -12,7 +12,7 @@
       "category": "Graphic Design",
       "job_title": "Logo Designer",
       "description": "Creating logos, branding materials, social media graphics, and marketing designs.",
-      "image": "https://example.com/images/logo-designer.jpg",
+      "image": "https://images.unsplash.com/photo-1657885428127-38a40be4e232?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bG9nbyUyMGRlc2lnbmVyfGVufDB8fDB8fHww",
       "rating": 4.7,
       "salary": "$15 - $80/hr"
     },
@@ -20,7 +20,7 @@
       "category": "Content Writing",
       "job_title": "SEO Content Writer",
       "description": "Writing blog posts, articles, website content, and product descriptions.",
-      "image": "https://example.com/images/content-writer.jpg",
+      "image": "https://images.unsplash.com/photo-1621763540955-313b39dfac2f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y29udGVudCUyMHdyaXRlcnxlbnwwfHwwfHx8MA%3D%3D",
       "rating": 4.6,
       "salary": "$10 - $60/hr"
     },
@@ -28,7 +28,7 @@
       "category": "Digital Marketing",
       "job_title": "Social Media Manager",
       "description": "SEO, social media marketing, email marketing, and paid advertising.",
-      "image": "https://example.com/images/social-media-manager.jpg",
+      "image": "https://plus.unsplash.com/premium_photo-1673984259285-ac2152a63f1e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y29udGVudCUyMHdyaXRlcnxlbnwwfHwwfHx8MA%3D%3D",
       "rating": 4.7,
       "salary": "$20 - $90/hr"
     },
@@ -36,7 +36,7 @@
       "category": "Mobile App Development",
       "job_title": "Android App Developer",
       "description": "Building applications for iOS and Android platforms.",
-      "image": "https://example.com/images/android-developer.jpg",
+      "image": "https://img.freepik.com/free-vector/app-development-banner_33099-1720.jpg?semt=ais_hybrid&w=740",
       "rating": 4.9,
       "salary": "$30 - $120/hr"
     },
@@ -44,9 +44,10 @@
       "category": "Video Editing",
       "job_title": "YouTube Video Editor",
       "description": "Editing promotional videos, YouTube content, reels, and animations.",
-      "image": "https://example.com/images/video-editor.jpg",
+      "image": "https://images.unsplash.com/photo-1636971819476-aa41dc3db0d0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dmlkZW8lMjBlZGl0aW5nfGVufDB8fDB8fHww",
       "rating": 4.8,
       "salary": "$20 - $70/hr"
     }
   ]
-}
+
+
