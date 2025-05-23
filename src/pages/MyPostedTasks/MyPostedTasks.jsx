@@ -15,7 +15,7 @@ useEffect(()=>{
 },[ ])
     // const shuduls = useLoaderData()
     const handeldelete =(id)=>{
-      
+   
     fetch(`http://localhost:3000/coffees/${id}`,{
         method:"DELETE",
         headers:{

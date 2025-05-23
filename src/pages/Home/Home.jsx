@@ -2,8 +2,13 @@ import React from 'react';
 import Slidersection from './Slidersection';
 import FeaturedTasksSection from './FeaturedTasksSection';
 import { useLoaderData } from 'react-router';
+import Jobcatagory from '../../components/Jobcatagorys/Jobcatagory';
+import Freelencerjob from '../../components/Jobcatagorys/Freelencerjob';
+
 const Home = () => {
    const grapesdata = useLoaderData()
+  
+
   // console.log(grapesdata)
     return (
         <div>
@@ -14,8 +19,12 @@ const Home = () => {
             grapesdata.map(grape=><FeaturedTasksSection key={grape._id} grape={grape}></FeaturedTasksSection>)
           }
         </div>
-        
-         
+          <div>
+            <h1 className='text-center text-4xl my-4 font-bold'>Popular Job Categories</h1>
+            <Jobcatagory></Jobcatagory>
+            <Freelencerjob></Freelencerjob>
+          </div>
+           
         </div>
     );
 };

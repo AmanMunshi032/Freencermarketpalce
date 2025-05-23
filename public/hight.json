@@ -1,0 +1,52 @@
+{
+  "top_rated_freelancers": [
+    {
+      "name": "Ayesha Khan",
+      "photo": "https://example.com/images/ayesha.jpg",
+      "country": "Pakistan",
+      "category": "Graphic Design",
+      "rating": 4.9,
+      "salary": "$30 - $70/hr"
+    },
+    {
+      "name": "John Smith",
+      "photo": "https://example.com/images/john.jpg",
+      "country": "United States",
+      "category": "Web Development",
+      "rating": 4.9,
+      "salary": "$40 - $100/hr"
+    },
+    {
+      "name": "Carlos Hernandez",
+      "photo": "https://example.com/images/carlos.jpg",
+      "country": "Mexico",
+      "category": "Mobile App Development",
+      "rating": 4.8,
+      "salary": "$35 - $90/hr"
+    },
+    {
+      "name": "Fatima Noor",
+      "photo": "https://example.com/images/fatima.jpg",
+      "country": "Bangladesh",
+      "category": "Content Writing",
+      "rating": 4.8,
+      "salary": "$15 - $50/hr"
+    },
+    {
+      "name": "Emma Wilson",
+      "photo": "https://example.com/images/emma.jpg",
+      "country": "United Kingdom",
+      "category": "Digital Marketing",
+      "rating": 4.9,
+      "salary": "$25 - $80/hr"
+    },
+    {
+      "name": "Ravi Mehta",
+      "photo": "https://example.com/images/ravi.jpg",
+      "country": "India",
+      "category": "Video Editing",
+      "rating": 4.9,
+      "salary": "$20 - $60/hr"
+    }
+  ]
+}

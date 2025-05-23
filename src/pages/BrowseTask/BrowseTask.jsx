@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router';
 import { useLoaderData } from 'react-router';
+ import { __unstable__loadDesignSystem } from 'tailwindcss';
 
 const BrowseTask = () => {
     const data =useLoaderData()
@@ -16,7 +17,7 @@ const BrowseTask = () => {
        <p className=''>{ grape.Category}</p>
       <p>{ grape.Deadline}</p>
     <p className=''>{grape.Description}</p>
-    <NavLink to ={`/TaskDetail`}>
+    <NavLink to ={`/TaskDetail/${grape._id}`}>
      <button className='px-4 py-2 bg-cyan-900 rounded-md text-white font-semibold'>See Details</button>
     </NavLink>
    

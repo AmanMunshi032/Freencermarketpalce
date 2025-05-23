@@ -1,0 +1,52 @@
+{
+  "freelancer_popular_jobs": [
+    {
+      "category": "Web Development",
+      "job_title": "Frontend Developer",
+      "description": "Designing and building websites, web apps, and e-commerce platforms.",
+      "image": "https://example.com/images/frontend-developer.jpg",
+      "rating": 4.8,
+      "salary": "$25 - $100/hr"
+    },
+    {
+      "category": "Graphic Design",
+      "job_title": "Logo Designer",
+      "description": "Creating logos, branding materials, social media graphics, and marketing designs.",
+      "image": "https://example.com/images/logo-designer.jpg",
+      "rating": 4.7,
+      "salary": "$15 - $80/hr"
+    },
+    {
+      "category": "Content Writing",
+      "job_title": "SEO Content Writer",
+      "description": "Writing blog posts, articles, website content, and product descriptions.",
+      "image": "https://example.com/images/content-writer.jpg",
+      "rating": 4.6,
+      "salary": "$10 - $60/hr"
+    },
+    {
+      "category": "Digital Marketing",
+      "job_title": "Social Media Manager",
+      "description": "SEO, social media marketing, email marketing, and paid advertising.",
+      "image": "https://example.com/images/social-media-manager.jpg",
+      "rating": 4.7,
+      "salary": "$20 - $90/hr"
+    },
+    {
+      "category": "Mobile App Development",
+      "job_title": "Android App Developer",
+      "description": "Building applications for iOS and Android platforms.",
+      "image": "https://example.com/images/android-developer.jpg",
+      "rating": 4.9,
+      "salary": "$30 - $120/hr"
+    },
+    {
+      "category": "Video Editing",
+      "job_title": "YouTube Video Editor",
+      "description": "Editing promotional videos, YouTube content, reels, and animations.",
+      "image": "https://example.com/images/video-editor.jpg",
+      "rating": 4.8,
+      "salary": "$20 - $70/hr"
+    }
+  ]
+}

@@ -10,6 +10,7 @@ import BrowseTask from "../pages/BrowseTask/BrowseTask";
 import MyPostedTasks from "../pages/MyPostedTasks/MyPostedTasks";
 import TaskDetail from "../components/TaskDetails/TaskDetail";
 import UpdateData from "../components/UpdateData/UpdateData";
+import Jobcatagory from "../components/Jobcatagorys/Jobcatagory";
 
   export const router = createBrowserRouter([
     {
@@ -19,11 +20,13 @@ import UpdateData from "../components/UpdateData/UpdateData";
         {
             path:'/',
             loader:()=>fetch('http://localhost:3000/grapes'),
-            Component:Home
+            Component:Home,
+             
         },
         {
             path:'/AddTask ',
             Component:AddTask
+          
         },
          {
             path:'MyPostedTasks',
@@ -39,15 +42,15 @@ import UpdateData from "../components/UpdateData/UpdateData";
         {
           path:'/TaskDetail',
           Component:TaskDetail,
-            loader:()=>fetch('http://localhost:3000/coffees')
+            loader:()=>fetch('http://localhost:3000/coffees'),
+           
         },
         {
           path:'/UpdateData/:id',
           Component:UpdateData,
              loader:({params})=>fetch(`http://localhost:3000/coffees/${params.id}`)
-        }
-
-       
+        },
+      
       ]
     },
     {
