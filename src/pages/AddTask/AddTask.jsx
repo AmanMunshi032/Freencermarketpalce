@@ -42,9 +42,15 @@ const handelTask =(e)=>{
 </fieldset>
 <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  w-full border p-4">
   <label className="label text-xl">Category</label>
-
-  <input type="" name='Category' className="input w-full" placeholder="Enter  Category" />
- 
+  <select type="" name='Category' className="input w-full" placeholder="Enter 
+   Category" >
+  <option value='web developer'> web developer</option>
+  <option value='App developer'> App developer</option>
+  <option value='Design'> Design</option>
+  <option value='Writing '> Writing </option>
+  <option value='Marketing'> Marketing</option>
+  <option value='machinelearning'> machine learning</option>
+ </select>
 </fieldset>
 <fieldset className="fieldset bg-base-200 border-base-300 rounded-box   w-full border p-4">
   <label className="label text-xl">Deadline </label>

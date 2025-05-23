@@ -1,7 +1,7 @@
 import React from 'react';
 
 const TaskDitelscard = ({ditels}) => {
-  const {Category,TaskTitle,Description ,Budget}= ditels
+  const {Category,TaskTitle,Description ,Budget} = ditels
     console.log(ditels)
     return (
         <div className='max-w-4xl mx-auto p-8 space-y-4 my-6 md:flex gap-5 bg-emerald-100 rounded-2xl'>
@@ -10,7 +10,7 @@ const TaskDitelscard = ({ditels}) => {
         </div>
         <div className='mt-10'>
           <h1 className='text-2xl font-semibold'>Title:{TaskTitle}</h1>
-          <p>Category:</p>
+          <p>Category:{Category}</p>
           <p>Budget:</p>
           <p>Description:</p>
         </div>

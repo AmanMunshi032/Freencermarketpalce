@@ -12,18 +12,18 @@ const Home = () => {
     return (
         <div>
           <Slidersection></Slidersection>
-          <h1 className='text-5xl text-center m-4 font-semibold'>Featured Tasks</h1>
+          <h1 className='text-5xl text-center m-4 font-semibold text-cyan-600'>Featured Tasks</h1>
         <div className=' md:w-7xl md:mx-auto grid md:grid-cols-3 grid-cols-1 p-6  gap-4'>
             {
             grapesdata.map(grape=><FeaturedTasksSection key={grape._id} grape={grape}></FeaturedTasksSection>)
           }
         </div>
           <div>
-            <h1 className='text-center text-4xl my-4 font-bold'>Popular Job Categories</h1>
+            <h1 className='text-center text-4xl my-4 font-bold text-cyan-600'>Popular Job Categories</h1>
             <Jobcatagory></Jobcatagory>
           </div>
           <div>
-             <h1 className='text-center text-4xl my-4 font-bold'>Highest Rated Freelancers</h1>
+             <h1 className='text-center text-4xl my-4 font-bold text-cyan-600'>Highest Rated Freelancers</h1>
              <Hightreting></Hightreting>
           </div>
            

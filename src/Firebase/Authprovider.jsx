@@ -25,7 +25,8 @@ const handelDarklight =()=>{
   if(mode == "Light"){
     setmode("Dark")
     
-    document.body.style.backgroundColor="black"
+     document.body.style.backgroundColor="black"
+   
   }
   else{
       setmode("Light")
