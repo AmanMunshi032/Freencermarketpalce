@@ -42,7 +42,7 @@ const Register = () => {
        })
        console.log(user)
        //fece 
-       fetch('http://localhost:3000/users',{
+       fetch('https://freelance-task-marketplace-server-ten.vercel.app//users',{
          method:'POST',
        headers:{
       'content-type':'application/json'

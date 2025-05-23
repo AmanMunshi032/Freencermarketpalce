@@ -19,7 +19,7 @@ import Jobcatagory from "../components/Jobcatagorys/Jobcatagory";
       children:[
         {
             path:'/',
-            loader:()=>fetch('http://localhost:3000/grapes'),
+            loader:()=>fetch('https://freelance-task-marketplace-server-ten.vercel.app/grapes'),
             Component:Home,
              
         },
@@ -36,19 +36,19 @@ import Jobcatagory from "../components/Jobcatagorys/Jobcatagory";
         {
             path:'/BrowseTask',
             Component:BrowseTask,
-            loader:()=>fetch('http://localhost:3000/coffees')
+            loader:()=>fetch('https://freelance-task-marketplace-server-ten.vercel.app/coffees')
 
         },
         {
           path:'/TaskDetail/:id',
           Component:TaskDetail,
-            loader:()=>fetch('http://localhost:3000/coffees'),
+            loader:()=>fetch('https://freelance-task-marketplace-server-ten.vercel.app/coffees'),
            
         },
         {
           path:'/UpdateData/:id',
           Component:UpdateData,
-             loader:({params})=>fetch(`http://localhost:3000/coffees/${params.id}`)
+             loader:({params})=>fetch(`https://freelance-task-marketplace-server-ten.vercel.app/coffees/${params.id}`)
         },
       
       ]

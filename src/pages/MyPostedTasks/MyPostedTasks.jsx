@@ -6,7 +6,7 @@ import Swal from 'sweetalert2';
 const MyPostedTasks = () => {
 const [shuduldata,setshuduldata]=useState([])
 useEffect(()=>{
-    fetch('http://localhost:3000/coffees')
+    fetch('https://freelance-task-marketplace-server-ten.vercel.app/coffees')
     .then(res=>res.json())
     .then(data=>{
        setshuduldata(data)
@@ -16,7 +16,7 @@ useEffect(()=>{
     // const shuduls = useLoaderData()
     const handeldelete =(id)=>{
    
-    fetch(`http://localhost:3000/coffees/${id}`,{
+    fetch(`https://freelance-task-marketplace-server-ten.vercel.app/coffees/${id}`,{
         method:"DELETE",
         headers:{
           'content-type':'application/json'

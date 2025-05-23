@@ -24,6 +24,7 @@ const singout =()=>{
 const handelDarklight =()=>{
   if(mode == "Light"){
     setmode("Dark")
+    
     document.body.style.backgroundColor="black"
   }
   else{

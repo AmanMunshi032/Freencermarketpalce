@@ -11,7 +11,7 @@ const UpdateData = () => {
   const updatecoffee = Object.fromEntries(formdata.entries())
   console.log(updatecoffee)
   // update data 
-  fetch(`http://localhost:3000/coffees/${_id}`,{
+  fetch(`https://freelance-task-marketplace-server-ten.vercel.app/coffees/${_id}`,{
     method:"PUT",
     headers:{
          'content-type':'application/json'
@@ -52,8 +52,8 @@ const UpdateData = () => {
   <input type="date" name='Deadline' defaultValue={Deadline} className="input w-full" placeholder="Enter your Description" />
 </fieldset>
 <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  w-full border p-4">
-  <label className="label"> Budget</label>
-  <input type="text" name='Budget'  defaultValue={Budget} className="input w-full" placeholder="Enter Deadline" />
+  <label className="label"> Buget</label>
+  <input type="text" name='Buget'  defaultValue={Budget} className="input w-full" placeholder="Enter Deadline" />
 </fieldset>
             </div>
    <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-full border p-4">

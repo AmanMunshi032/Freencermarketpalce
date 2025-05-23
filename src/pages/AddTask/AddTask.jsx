@@ -11,7 +11,7 @@ const handelTask =(e)=>{
   const updatecoffee = Object.fromEntries(formdata.entries())
   console.log(updatecoffee)
 
-  fetch('http://localhost:3000/grapes',{
+  fetch('https://freelance-task-marketplace-server-ten.vercel.app/grapes',{
     method:'POST',
     headers:{
       'content-type':'application/json'
@@ -51,8 +51,8 @@ const handelTask =(e)=>{
   <input type="date" name='Deadline' className="input w-full" placeholder="Enter your Description" />
 </fieldset>
 <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  w-full border p-4">
-  <label className="label text-xl"> Budget</label>
-  <input type="text" name='Budget' className="input w-full" placeholder="Enter Deadline" />
+  <label className="label text-xl"> Buget</label>
+  <input type="text" name='Buget' className="input w-full" placeholder="Enter Deadline" />
 </fieldset>
 
 <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  w-full border p-4">
