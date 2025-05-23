@@ -24,9 +24,9 @@ const UpdateData = () => {
      Swal.fire({
       // position: "top-end",
       icon: "success",
-      title: "Your data added successfuly!",
+      title: "Your data Update successfuly!",
       showConfirmButton: false,
-      timer: 1500
+      timer: 2000
     });
   }
 })

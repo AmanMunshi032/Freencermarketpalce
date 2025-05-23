@@ -38,7 +38,7 @@ useEffect(()=>{
 })
    Swal.fire({
       title: "Deleted!",
-      text: "Your coffee has been deleted.",
+      text: "Your data has been deleted.",
       icon: "success"
     });
   

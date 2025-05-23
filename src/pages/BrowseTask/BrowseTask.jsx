@@ -5,7 +5,7 @@ import { useLoaderData } from 'react-router';
 const BrowseTask = () => {
     const data =useLoaderData()
 
-    console.log(data)
+     console.log(data)
     return (
         <div className=' md:w-7xl md:mx-auto grid md:grid-cols-3 grid-cols-2 p-6  gap-4'>
           {
@@ -16,7 +16,7 @@ const BrowseTask = () => {
        <p className=''>{ grape.Category}</p>
       <p>{ grape.Deadline}</p>
     <p className=''>{grape.Description}</p>
-    <NavLink to ='/TaskDetail'>
+    <NavLink to ={`/TaskDetail`}>
      <button className='px-4 py-2 bg-cyan-900 rounded-md text-white font-semibold'>See Details</button>
     </NavLink>
    

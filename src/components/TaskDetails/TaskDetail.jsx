@@ -1,12 +1,21 @@
-import React from 'react';
-import { useLoaderData } from 'react-router';
+import React, {  useEffect, useState } from 'react';
+import { useLoaderData, useParams,  } from 'react-router';
+import TaskDitelscard from './TaskDitelscard';
 
 const TaskDetail = () => {
-    const ditels = useLoaderData()
-    console.log(ditels)
+     const {_id} = useParams()
+    console.log(_id)
+    const Appditels = useLoaderData()
+    console.log(Appditels)
+    const[ditels,setditels]=useState({})
+    
+    useEffect(()=>{
+        const newdata= Appditels.filter((singledata)=>singledata.id == _id)
+        setditels(newdata)
+    },[_id, Appditels])
     return (
         <div>
-         <h1>hello ditels page</h1>
+          <TaskDitelscard ditels={ditels} ></TaskDitelscard>
         </div>
     ); 
 };

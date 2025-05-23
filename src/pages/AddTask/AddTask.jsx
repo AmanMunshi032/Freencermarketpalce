@@ -26,7 +26,7 @@ const handelTask =(e)=>{
   icon: "success",
   title: "Your data added successfuly!",
   showConfirmButton: false,
-  timer: 1500
+  timer: 2000
 });
   })
 }
@@ -37,37 +37,44 @@ const handelTask =(e)=>{
         </div>
         <form  onSubmit={handelTask}>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mb-3'>              <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-full  border p-4">
-  <label className="label">Task Title</label>
+  <label className="label text-xl">Task Title</label>
   <input type="text"name='TaskTitle' className="input w-full" placeholder=" Title Name" />
 </fieldset>
 <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  w-full border p-4">
-  <label className="label">Category</label>
+  <label className="label text-xl">Category</label>
 
   <input type="" name='Category' className="input w-full" placeholder="Enter  Category" />
  
 </fieldset>
 <fieldset className="fieldset bg-base-200 border-base-300 rounded-box   w-full border p-4">
-  <label className="label">Deadline </label>
+  <label className="label text-xl">Deadline </label>
   <input type="date" name='Deadline' className="input w-full" placeholder="Enter your Description" />
 </fieldset>
 <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  w-full border p-4">
-  <label className="label"> Budget</label>
+  <label className="label text-xl"> Budget</label>
   <input type="text" name='Budget' className="input w-full" placeholder="Enter Deadline" />
 </fieldset>
+
 <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  w-full border p-4">
-  <label className="label">Email</label>
+  <label className="label text-xl">UserName</label>
+    <p type="text" name='name' className=' input w-full text-xl'>{user && user.displayName}</p>
+</fieldset>
+   <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  w-full border p-4">
+  <label className="label text-xl">Email</label>
    <p type="email" name='email' className=' input w-full text-xl'>{user&& user.email}</p>
 </fieldset>
 <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  w-full border p-4">
-  <label className="label">UserName</label>
-    <p type="text" name='name' className=' input w-full text-xl'>{user && user.displayName}</p>
+  <label className="label text-xl"> Photo Url</label>
+  <input type="text" name='photo' className="input w-full" placeholder="Enter Deadline" />
 </fieldset>
-            </div>
+
    <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-full border p-4">
-  <label className="label ">Description</label>
- <textarea type="text" name='Description' >
+  <label className="label text-xl ">Description</label>
+ <textarea type="text" name='Description' className='border-2 text-xl' >
  </textarea>
 </fieldset>
+            </div>
+         
 <button className='btn  w-full mt-3' >Add Button</button>
         </form>
       </div>
