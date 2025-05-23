@@ -3,10 +3,10 @@ import Slidersection from './Slidersection';
 import FeaturedTasksSection from './FeaturedTasksSection';
 import { useLoaderData } from 'react-router';
 import Jobcatagory from '../../components/Jobcatagorys/Jobcatagory';
+import Hightreting from '../../components/Hightreting/Hightreting';
 
 const Home = () => {
    const grapesdata = useLoaderData()
-  
 
   // console.log(grapesdata)
     return (
@@ -21,7 +21,10 @@ const Home = () => {
           <div>
             <h1 className='text-center text-4xl my-4 font-bold'>Popular Job Categories</h1>
             <Jobcatagory></Jobcatagory>
-             
+          </div>
+          <div>
+             <h1 className='text-center text-4xl my-4 font-bold'>Highest Rated Freelancers</h1>
+             <Hightreting></Hightreting>
           </div>
            
         </div>

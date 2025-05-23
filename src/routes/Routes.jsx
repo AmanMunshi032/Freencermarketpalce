@@ -40,7 +40,7 @@ import Jobcatagory from "../components/Jobcatagorys/Jobcatagory";
 
         },
         {
-          path:'/TaskDetail',
+          path:'/TaskDetail/:id',
           Component:TaskDetail,
             loader:()=>fetch('http://localhost:3000/coffees'),
            

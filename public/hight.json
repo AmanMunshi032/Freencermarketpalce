@@ -1,8 +1,8 @@
-{
-  "top_rated_freelancers": [
+
+   [
     {
-      "name": "Ayesha Khan",
-      "photo": "https://example.com/images/ayesha.jpg",
+      "name": "Asif Khan",
+      "photo": "https://images.unsplash.com/photo-1583508915901-b5f84c1dcde1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "country": "Pakistan",
       "category": "Graphic Design",
       "rating": 4.9,
@@ -10,7 +10,7 @@
     },
     {
       "name": "John Smith",
-      "photo": "https://example.com/images/john.jpg",
+      "photo": "https://media.istockphoto.com/id/2094678442/photo/woman-working-in-home-office.webp?a=1&b=1&s=612x612&w=0&k=20&c=uvBh3fMMBT4Vdrl74BYAEevFwGm2k2iDZjGjrBljTR8=",
       "country": "United States",
       "category": "Web Development",
       "rating": 4.9,
@@ -18,7 +18,7 @@
     },
     {
       "name": "Carlos Hernandez",
-      "photo": "https://example.com/images/carlos.jpg",
+      "photo": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "country": "Mexico",
       "category": "Mobile App Development",
       "rating": 4.8,
@@ -26,7 +26,7 @@
     },
     {
       "name": "Fatima Noor",
-      "photo": "https://example.com/images/fatima.jpg",
+      "photo": "https://images.unsplash.com/photo-1698891668251-fd6974673f82?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "country": "Bangladesh",
       "category": "Content Writing",
       "rating": 4.8,
@@ -34,7 +34,7 @@
     },
     {
       "name": "Emma Wilson",
-      "photo": "https://example.com/images/emma.jpg",
+      "photo": "https://images.unsplash.com/photo-1612299273045-362a39972259?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "country": "United Kingdom",
       "category": "Digital Marketing",
       "rating": 4.9,
@@ -42,11 +42,11 @@
     },
     {
       "name": "Ravi Mehta",
-      "photo": "https://example.com/images/ravi.jpg",
+      "photo": "https://plus.unsplash.com/premium_photo-1667511127169-5abb91f2ce49?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "country": "India",
       "category": "Video Editing",
       "rating": 4.9,
       "salary": "$20 - $60/hr"
     }
   ]
-}
+

@@ -5,7 +5,7 @@ import Freelencerjob from './Freelencerjob';
 
 const Jobcatagory = () => {
 const [users, setUsers] = useState([]);
-console.log(users)
+
  useEffect(()=>{
      fetch('/jobcatagory.json')
   .then(res => res.json())
