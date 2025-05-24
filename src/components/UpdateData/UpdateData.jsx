@@ -32,12 +32,12 @@ const UpdateData = () => {
 })
     }
     return (
-          <div className='px-8 py-4'>
-          <div className='p-12 text-center space-y-4'>
+          <div className='px-8 py-4 bg-white dark:bg-gray-800 '>
+          <div className='p-12 text-center space-y-4 '>
                 <h1 className='text-5xl font-bold text-amber-400'> Updata Data </h1>
         </div>
         <form  onSubmit={handelupdateform}>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mb-3'>              <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-full  border p-4">
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mb-3 '>              <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-full  border p-4">
   <label className="label">Task Title</label>
   <input type="text"name='TaskTitle' defaultValue={TaskTitle} className="input w-full" placeholder=" Title Name" />
 </fieldset>

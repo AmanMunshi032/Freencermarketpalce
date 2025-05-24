@@ -48,12 +48,12 @@ useEffect(()=>{
       })
     }
     return (
-        <div className=' my-10'>
+        <div className=' bg-white dark:bg-gray-800 dark:text-white'>
            <div className="overflow-x-auto">
   <table className="table">
     {/* head */}
     <thead>
-      <tr>
+      <tr className='bg-white dark:bg-gray-800 dark:text-white'>
         <th></th>
         <th>Task Title</th>
         <th>Category</th>

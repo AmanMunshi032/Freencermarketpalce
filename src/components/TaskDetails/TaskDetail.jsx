@@ -1,6 +1,7 @@
 import React, {  useEffect, useState } from 'react';
 import { useLoaderData, useParams,  } from 'react-router';
 import TaskDitelscard from './TaskDitelscard';
+import { Darktheme } from '../Darktheme/Darkthem';
 
 const TaskDetail = () => {
 const[ditels,setditels]=useState({})
@@ -12,9 +13,12 @@ const[ditels,setditels]=useState({})
         setditels(newdata)
     },[id, cardditels])
     return (
-        <div>
+    
+ <div className=' bg-white dark:bg-gray-800 '>
           <TaskDitelscard ditels={ditels} ></TaskDitelscard>
         </div>
+      
+       
     ); 
 };
 

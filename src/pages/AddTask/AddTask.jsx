@@ -31,7 +31,7 @@ const handelTask =(e)=>{
   })
 }
     return (
-          <div className='px-8 py-4'>
+          <div className='px-8 py-4 bg-white dark:bg-gray-800'>
           <div className='p-12 text-center space-y-4'>
                 <h1 className='text-5xl font-bold text-amber-400'>Add Task</h1>
         </div>

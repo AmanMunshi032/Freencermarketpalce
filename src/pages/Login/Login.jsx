@@ -38,7 +38,7 @@ const Login = () => {
   console.log(email,password)
   }
     return (
-          <div className="hero bg-base-200  md:min-h-screen mt-20 md:mt-0 space-y-14 ">
+          <div className="hero bg-white dark:bg-gray-800  md:min-h-screen mt-20 md:mt-0 space-y-14 ">
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl space-y-5">
           <div className="card-body">
           <h1 className="text-3xl font-bold">Login now!</h1>

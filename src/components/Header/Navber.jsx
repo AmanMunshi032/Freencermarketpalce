@@ -5,9 +5,11 @@ import { Authcontext } from '../../Firebase/Authcontext';
 import { CiLight } from "react-icons/ci";
 import { MdDarkMode } from "react-icons/md";
 import { Tooltip } from 'react-tooltip';
+import { Darktheme, useDarkMode } from '../Darktheme/Darkthem';
 const Navber = () => {
+  const{ Darkmode,setDarkmode}=useDarkMode()
   const [show,setshow]=useState(false)
-  const {user,singout,handelDarklight}=use(Authcontext)
+  const {user,singout}=use(Authcontext)
    const handelLOgout=()=>{
      singout().then(()=>{
       alert("your logout successfuly !")
@@ -21,17 +23,17 @@ const Navber = () => {
    }
     const links = <>
 
-    <li className='text-purple-600'><NavLink to= '/' >Home</NavLink></li>
-    <li className='text-purple-600'><NavLink  to= '/AddTask '>Add Task </NavLink></li>
-     <li className='text-purple-600' > <NavLink to= '/BrowseTask'>Browse Tasks</NavLink></li> 
-     <li className='text-purple-600'> <NavLink to= '/MyPostedTasks'>My Posted Tasks</NavLink></li> 
+    <li className=''><NavLink to= '/' >Home</NavLink></li>
+    <li className=''><NavLink  to= '/AddTask '>Add Task </NavLink></li>
+     <li className='' > <NavLink to= '/BrowseTask'>Browse Tasks</NavLink></li> 
+     <li className=''> <NavLink to= '/MyPostedTasks'>My Posted Tasks</NavLink></li> 
  </>
     return (
-     
-       <div>
-  <div className="navbar  shadow-sm">
+    
+  <div className='bg-white  shadow-sm dark:bg-gray-800 dark:text-white'>
+  <div className="navbar ">
         <div className="navbar-start">
-          <button className='ml-4' onClick={ ()=> {handelshow(),handelDarklight()}}>{show? <CiLight size={28} />:<MdDarkMode size={28} />}</button>
+          <button className='ml-4' onClick={ ()=> {handelshow(),setDarkmode(!Darkmode)}}>{Darkmode? <CiLight size={28} />:<MdDarkMode size={28} />}</button>
           <div className="dropdown">
             
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -91,6 +93,8 @@ const Navber = () => {
        {/* hello */}
       </div>
        </div>
+   
+     
   
       
      

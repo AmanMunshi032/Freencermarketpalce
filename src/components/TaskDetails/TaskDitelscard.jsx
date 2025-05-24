@@ -7,24 +7,14 @@ const TaskDitelscard = ({ditels}) => {
     setValue( value + 1);
     toast('your bids Count successfully.!')
   };
-  fetch('https://freelance-task-marketplace-server-ten.vercel.app/users',{
-    method:'POST',
-    headers:{
-      'content-type':'application/json'
-    },
-    body:JSON.stringify(value)
-  })
-  .then(res => res.json())
-  .then(data =>{
-    console.log(data)
-  })
+ 
   
 
   const {Category,TaskTitle,Description ,Buget,photo} = ditels?.[0] || {}
     //  console.log(ditels)
     return (
-       <div>
-   <div className='max-w-4xl mx-auto p-8 space-y-4 my-6 md:flex gap-5 bg-emerald-100 rounded-2xl'>
+       <div >
+   <div className='max-w-4xl mx-auto p-8 space-y-4 md:flex gap-5 bg-emerald-100 rounded-2xl'>
          
         <div >
           <img className=' md:w-4xl w-full rounded-2xl shadow-md' src={photo} alt="" />

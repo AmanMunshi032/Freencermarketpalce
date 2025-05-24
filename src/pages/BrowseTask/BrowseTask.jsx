@@ -6,9 +6,9 @@ import { useLoaderData } from 'react-router';
 const BrowseTask = () => {
     const data =useLoaderData()
 
-     console.log(data)
     return (
-        <div className=' md:w-7xl md:mx-auto grid md:grid-cols-3 grid-cols-2 p-6  gap-4'>
+      <div className='bg-white dark:bg-gray-800 '>
+ <div className=' md:w-7xl md:mx-auto grid md:grid-cols-3 grid-cols-2 p-6  gap-4'>
           {
             data.map(grape=> <div className="  card bg-base-100  border-2 shadow-sm ">
   <div className="card-body  text-center">
@@ -25,6 +25,8 @@ const BrowseTask = () => {
 </div>)
           }
         </div>
+      </div>
+       
         
     );
 };
