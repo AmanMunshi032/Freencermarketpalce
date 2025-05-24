@@ -11,11 +11,13 @@ import MyPostedTasks from "../pages/MyPostedTasks/MyPostedTasks";
 import TaskDetail from "../components/TaskDetails/TaskDetail";
 import UpdateData from "../components/UpdateData/UpdateData";
 import Jobcatagory from "../components/Jobcatagorys/Jobcatagory";
+import Error from "../pages/Error/Error";
 
   export const router = createBrowserRouter([
     {
       path: "/",
       Component:Root,
+      errorElement:<Error></Error>,
       children:[
         {
             path:'/',
