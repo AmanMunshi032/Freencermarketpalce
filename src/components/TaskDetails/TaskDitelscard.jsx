@@ -1,8 +1,9 @@
 import React from 'react';
 
 const TaskDitelscard = ({ditels}) => {
-  const {Category,TaskTitle,Description ,Budget} = ditels
-    console.log(ditels)
+  const {Category,TaskTitle,Description ,Budget} = ditels?.[0] || {}
+
+     console.log(ditels)
     return (
         <div className='max-w-4xl mx-auto p-8 space-y-4 my-6 md:flex gap-5 bg-emerald-100 rounded-2xl'>
         <div >
@@ -11,8 +12,8 @@ const TaskDitelscard = ({ditels}) => {
         <div className='mt-10'>
           <h1 className='text-2xl font-semibold'>Title:{TaskTitle}</h1>
           <p>Category:{Category}</p>
-          <p>Budget:</p>
-          <p>Description:</p>
+          <p>Buget:{Budget}</p>
+          <p>Description: {Description}</p>
         </div>
         </div>
     );

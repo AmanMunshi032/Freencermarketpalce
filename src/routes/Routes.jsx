@@ -19,6 +19,8 @@ import Jobcatagory from "../components/Jobcatagorys/Jobcatagory";
       children:[
         {
             path:'/',
+           hydrateFallbackElement:<p className=' mt-72 mb-96 text-center'><span className="loading loading-bars 
+          loading-xl"></span></p>,
             loader:()=>fetch('https://freelance-task-marketplace-server-ten.vercel.app/grapes'),
             Component:Home,
              
@@ -36,17 +38,23 @@ import Jobcatagory from "../components/Jobcatagorys/Jobcatagory";
         {
             path:'/BrowseTask',
             Component:BrowseTask,
+              hydrateFallbackElement:<p className=' mt-72 mb-96 text-center'><span className="loading loading-bars 
+          loading-xl"></span></p>,
             loader:()=>fetch('https://freelance-task-marketplace-server-ten.vercel.app/coffees')
 
         },
         {
           path:'/TaskDetail/:id',
           Component:TaskDetail,
+            hydrateFallbackElement:<p className=' mt-72 mb-96 text-center'><span className="loading loading-bars 
+          loading-xl"></span></p>,
             loader:()=>fetch('https://freelance-task-marketplace-server-ten.vercel.app/coffees'),
            
         },
         {
           path:'/UpdateData/:id',
+            hydrateFallbackElement:<p className=' mt-72 mb-96 text-center'><span className="loading loading-bars 
+          loading-xl"></span></p>,
           Component:UpdateData,
              loader:({params})=>fetch(`https://freelance-task-marketplace-server-ten.vercel.app/coffees/${params.id}`)
         },

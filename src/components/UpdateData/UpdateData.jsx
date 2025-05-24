@@ -3,7 +3,7 @@ import { useLoaderData } from 'react-router';
 import Swal from 'sweetalert2';
 
 const UpdateData = () => {
-    const {_id,TaskTitle, Category, Deadline,Budget,Description}=useLoaderData()
+    const {_id,TaskTitle, Category, Deadline,Buget,Description,photo}=useLoaderData()
     const handelupdateform = (e)=>{
          e.preventDefault()
       const form =e.target
@@ -44,7 +44,16 @@ const UpdateData = () => {
 <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  w-full border p-4">
   <label className="label">Category</label>
 
-  <input type="" name='Category' defaultValue={Category} className="input w-full" placeholder="Enter  Category" />
+  <select type="text" name='Category' defaultValue={Category} className="input w-full" placeholder="Enter 
+   Category" >
+  <option value='web developer'> web developer</option>
+  <option value='App developer'> App developer</option>
+  <option value='Design'>grafix Digain</option>
+  <option value='Writing '> Writing </option>
+  <option value='Marketing'> Marketing</option>
+  <option value='machinelearning'> machine learning</option>
+  <option value='machinelearning'> software Engineering</option>
+ </select>
  
 </fieldset>
 <fieldset className="fieldset bg-base-200 border-base-300 rounded-box   w-full border p-4">
@@ -53,14 +62,20 @@ const UpdateData = () => {
 </fieldset>
 <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  w-full border p-4">
   <label className="label"> Buget</label>
-  <input type="text" name='Buget'  defaultValue={Budget} className="input w-full" placeholder="Enter Deadline" />
+  <input type="text" name='Buget'  defaultValue={Buget} className="input w-full" placeholder="Enter Deadline" />
 </fieldset>
-            </div>
-   <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-full border p-4">
+
+<fieldset className="fieldset bg-base-200 border-base-300 rounded-box  w-full border p-4">
+  <label className="label text-xl"> Photo Url</label>
+  <input type="text" name='photo' defaultValue={photo} className="input w-full" placeholder="Enter Deadline" />
+</fieldset>
+ <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-full border p-4">
   <label className="label ">Description</label>
- <textarea type="text" name='Description' defaultValue={Description} >
+ <textarea type="text" name='Description' className='border-1' defaultValue={Description} >
  </textarea>
 </fieldset>
+            </div>
+  
 <button className='btn  w-full mt-3' >Update Button</button>
         </form>
       </div>
